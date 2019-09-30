@@ -1,10 +1,14 @@
-package de.adito.vaadin.addon;
+package de.adito.vaadin.addon.anchor_wrapper;
 
 import com.vaadin.server.Resource;
 import com.vaadin.ui.AbstractSingleComponentContainer;
 import com.vaadin.ui.Component;
-import de.adito.vaadin.addon.client.AnchorWrapperState;
+import de.adito.vaadin.addon.anchor_wrapper.client.AnchorWrapperState;
 
+/**
+ * Describes a Vaadin component which takes a resource and component. The given
+ * component will be wrapped into a `<a></a>`-Tag.
+ */
 public class AnchorWrapper extends AbstractSingleComponentContainer {
 
   public AnchorWrapper (Resource pResource, Component pComponent) {
@@ -22,7 +26,12 @@ public class AnchorWrapper extends AbstractSingleComponentContainer {
     return (AnchorWrapperState) super.getState(markAsDirty);
   }
 
+  /**
+   * Will set the given resource as href resource for the anchor tag.
+   *
+   * @param pResource The resource to use for the anchor tag.
+   */
   public void setResource (Resource pResource) {
-    setResource("href", pResource);
+    setResource(AnchorWrapperConstants.HREF_RESOURCE, pResource);
   }
 }

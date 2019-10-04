@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.adito.vaadin.addons.anchor-wrapper</groupId>
-    <artifactId>anchor-wrapper-addon</artifactId>
+    <artifactId>anchor-wrapper</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>Anchor wrapper Add-on</name>
+    <name>AnchorWrapper Add-on</name>
 
     <prerequisites>
         <maven>3</maven>
@@ -35,24 +35,21 @@
         <Vaadin-Addon>${project.artifactId}-${project.version}.jar</Vaadin-Addon>
     </properties>
 
-    <!--
-	<organization>
-		<name>My Name</name>
-		<url>https://github.com/mygithubaccount/MyComponent/</url>
-	</organization>
+    <organization>
+        <name>ADITO Software GmbH</name>
+        <url>https://github.com/aditosoftware</url>
+    </organization>
 
-	<scm>
-		<url>git://github.com/mygithubaccount/MyComponent.git</url>
-		<connection>scm:git:git://github.com/mygithubaccount/MyComponent.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/mygithubaccount/${componentClassName}.git</developerConnection>
-		<tag>MyComponent add-on for Vaadin</tag>
-	</scm>
+    <scm>
+        <url>git://github.com/aditosoftware/vaadin-anchor-wrapper.git</url>
+        <connection>scm:git:git://github.com/aditosoftware/vaadin-anchor-wrapper.git</connection>
+        <tag>AnchorWrapper add-on for Vaadin</tag>
+    </scm>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/mygithubaccount/MyComponent/issues</url>
-	</issueManagement>
-    -->
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/aditosoftware/vaadin-anchor-wrapper/issues</url>
+    </issueManagement>
 
     <licenses>
         <license>

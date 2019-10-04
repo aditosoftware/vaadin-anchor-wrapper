@@ -3,12 +3,11 @@
 Anchor wrapper simply wraps any given component into an anchor (`<a></a>`).
 
 ## Download release
-
 Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to http://vaadin.com/addon/anchor-wrapper
 
 ## Building and running demo
 ```
-git clone <url of the MyComponent repository>
+git clone https://github.com/aditosoftware/vaadin-anchor-wrapper
 mvn clean install
 cd demo
 mvn jetty:run

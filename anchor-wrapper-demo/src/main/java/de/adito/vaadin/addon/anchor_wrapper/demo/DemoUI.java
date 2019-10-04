@@ -1,4 +1,4 @@
-package org.test.demo;
+package de.adito.vaadin.addon.anchor_wrapper.demo;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
@@ -9,12 +9,12 @@ import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.UI;
-import org.test.AnchorWrapper;
+import de.adito.vaadin.addon.anchor_wrapper.AnchorWrapper;
 
 import javax.servlet.annotation.WebServlet;
 
 @Theme("demo")
-@Title("MyComponent Add-on Demo")
+@Title("AnchorWrapper Add-on Demo")
 @SuppressWarnings("serial")
 public class DemoUI extends UI {
 
@@ -25,10 +25,12 @@ public class DemoUI extends UI {
 
   @Override
   protected void init (VaadinRequest request) {
-
     Panel wrapPanel = new Panel(new Label("test"));
 
     AnchorWrapper anchor = new AnchorWrapper(new ExternalResource("https://google.com"), wrapPanel);
+    anchor.setStyleName("v-test");
+
+    anchor.setTabIndex(20);
 
     setContent(anchor);
   }

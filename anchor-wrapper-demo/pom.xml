@@ -14,8 +14,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>13</maven.compiler.source>
-        <maven.compiler.target>13</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <vaadin.version>8.8.1</vaadin.version>
         <vaadin.plugin.version>8.8.1</vaadin.plugin.version>
         <jetty.plugin.version>9.4.20.v20190813</jetty.plugin.version>
@@ -69,8 +69,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.test</groupId>
-            <artifactId>vaadin-app</artifactId>
+            <groupId>de.adito.vaadin.addons.anchor-wrapper</groupId>
+            <artifactId>anchor-wrapper-addon</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

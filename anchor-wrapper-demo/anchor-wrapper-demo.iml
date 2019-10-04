@@ -23,7 +23,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_13">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -34,7 +34,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.test:vaadin-app:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="anchor-wrapper-addon" />
     <orderEntry type="library" name="Maven: com.vaadin:vaadin-server:8.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin:vaadin-shared:8.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.11.2" level="project" />

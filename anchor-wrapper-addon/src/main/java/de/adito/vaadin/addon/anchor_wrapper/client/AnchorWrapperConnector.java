@@ -6,7 +6,6 @@ import com.vaadin.client.communication.StateChangeEvent;
 import com.vaadin.client.ui.AbstractSingleComponentContainerConnector;
 import com.vaadin.shared.ui.Connect;
 import de.adito.vaadin.addon.anchor_wrapper.AnchorWrapper;
-import de.adito.vaadin.addon.anchor_wrapper.AnchorWrapperConstants;
 
 @Connect(AnchorWrapper.class)
 public class AnchorWrapperConnector extends AbstractSingleComponentContainerConnector {
@@ -23,6 +22,9 @@ public class AnchorWrapperConnector extends AbstractSingleComponentContainerConn
       else
         getWidget().getElement().setAttribute("href", href);
     }
+
+    if (stateChangeEvent.hasPropertyChanged("tabIndex"))
+      getWidget().getElement().setTabIndex(getState().tabIndex);
   }
 
   @Override
@@ -37,7 +39,7 @@ public class AnchorWrapperConnector extends AbstractSingleComponentContainerConn
 
   @Override
   public boolean delegateCaptionHandling () {
-    return false;
+    return true;
   }
 
   @Override
